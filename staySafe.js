@@ -6,7 +6,7 @@
 var databaseUrl = "mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/"; // "username:password@example.com/mydb"
 var collections = ["userDetails"]
 var mongojs = require("mongojs");
-var db = mongojs("staySafe");
+var db = mongojs("staysafe");
 var userCollection=db.collection("userDetails");
 var checkInDetails=db.collection("checkInDetails");
 

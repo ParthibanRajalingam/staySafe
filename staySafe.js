@@ -16,8 +16,8 @@ var checkInDetails=db.collection("checkInDetails");
 var express = require("express");
 var app=express();
 
-  var host = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-  var port = process.env.OPENSHIFT_NODEJS_PORT || 8080; 
+  var host = process.env.OPENSHIFT_NODEJS_IP;
+  var port = process.env.OPENSHIFT_NODEJS_PORT; 
 
 var server = app.listen(port, host, function () {
 
